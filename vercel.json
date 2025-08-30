@@ -2,12 +2,17 @@
   "version": 2,
   "public": true,
   "cleanUrls": true,
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
+  "buildCommand": false,
+  "outputDirectory": ".",
   "routes": [
+    {
+      "src": "/src/(.*)",
+      "dest": "/src/$1"
+    },
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
     {
       "handle": "filesystem"
     },
