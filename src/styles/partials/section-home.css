@@ -1,0 +1,131 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-content h1{
+    text-align: center;
+    color: #fff;
+    font-size: 2.6rem;
+    padding: 4px;
+    font-weight: 700;
+}
+
+.home-content p{
+    text-align: center;
+    color: #ccc;
+    font-size: 1.1rem;
+    padding: 4px;
+    font-weight: 400;
+    max-width: 600px;
+}
+
+.home-content p strong {
+    color: #c5c1c1;
+    font-weight: 600;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.home-content .btn a {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+    order: 1;
+}
+
+.home-content .btn a:hover {
+    color: #fff;
+}
+
+.home-content .btn button {
+    display: inline-block;
+    margin-top: 0;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    order: 2;
+}
+
+.home-content .btn button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+    
+    .home-content p {
+        font-size: 1rem;
+        padding: 2px;
+    }
+    
+    .home-content .btn button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+#home {
+    min-height: 100vh;
+    width: 100%;
+
+    /* Fundo com fade + grid branco */
+    background:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 85%, #111 100%), /* Fade suave */
+        linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px), /* Linhas verticais brancas */
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px); /* Linhas horizontais brancas */
+
+    background-size: 100% 100%, 120px 120px, 120px 120px;
+    background-repeat: no-repeat, repeat, repeat;
+}
+
+.card-style {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 250px;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn button a{
+    color: #fff;
+}
